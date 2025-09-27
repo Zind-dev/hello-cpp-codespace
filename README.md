@@ -23,6 +23,3 @@ A minimal C++ "Hello World" project configured for GitHub Codespaces, VS Code, a
 
 ## CI
 A basic GitHub Actions workflow builds and runs the program on Linux.
-
-## License
-Add your preferred license (MIT/Apache-2.0/BSD-3-Clause). If you want, I can add MIT for you.

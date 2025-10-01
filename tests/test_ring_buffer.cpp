@@ -11,9 +11,9 @@ TEST_CASE("RingBuffer basic push/pop") {
     REQUIRE(rb.full());
     REQUIRE_FALSE(rb.push(4));
 
-    auto a = rb.pop(); REQUIRE(a && *a == 1);
-    auto b = rb.pop(); REQUIRE(b && *b == 2);
-    auto c = rb.pop(); REQUIRE(c && *c == 3);
+    auto a = rb.pop(); REQUIRE((a && *a == 1));
+    auto b = rb.pop(); REQUIRE((b && *b == 2));
+    auto c = rb.pop(); REQUIRE((c && *c == 3));
     REQUIRE(rb.empty());
     REQUIRE_FALSE(rb.pop().has_value());
 }
